@@ -1,0 +1,210 @@
+/*Corpo*/
+
+body {
+    /*Se der problema na font a sans-serif vai aparecer no lugar*/
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+
+h1, h2, h3{
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+.botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ee6b81;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*Navegação*/
+nav {
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    background-color: #ee6b81;
+}
+
+/*Logo no menu*/
+nav > a{
+    text-decoration: none;/*tira a decoração do texto: sublinhado*/
+    color:#FFFFFF;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    list-style: none;
+    padding: 0;/*tira o espaçamento*/
+    width: 100%;/*largura, o menu vai ocupar 100% da largura da plataforma que estiver exibindo*/
+}
+
+/*estilos dos itens do texto*/
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0; /*o 0 tira o espaçamento da letra entre o bloco */
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    background-image: url("../img/pink.jpg");
+    background-size: cover;/*cobre todo o espaço*/
+    background-repeat: none;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #FFFFFF;
+}
+
+header p{
+    margin-bottom: 2em;/*margem dinamica a partir da posição que iniciar*/
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #ee6b81;
+    color: #FFFFFF;
+}
+
+#sobre h2{
+    color: #FFFFFF;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;/*margem dinamica para separar as seções*/
+    max-width: 1000px;
+}
+
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+/*Serviços*/
+#serviços{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    padding: 30px;
+}
+
+#serviços div{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*Contato*/
+#contato{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato h2{
+    color: #000000;
+}
+
+/*Rodapé*/
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #ee6b81;
+    color: #FFFFFF;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+/*deixar o site responsivo*/
+@media screen and (min-width: 768px){
+    /*nav*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*Cabeçalho*/
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /*Sobre*/
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;/*altura minima*/
+    }
+
+    /*Serviços*/
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;/*quebra de linha*/
+        align-items: flex-start;
+        max-width: 1000px;/*Largura maxima*/
+        margin: 0 auto;/*auto ajusta automaticamente a distancia entre esquerda e direita*/
+    }
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /*Contato*/
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+    }
+}
