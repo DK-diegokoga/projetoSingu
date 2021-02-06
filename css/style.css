@@ -3,7 +3,7 @@
 body {
     /*Se der problema na font a sans-serif vai aparecer no lugar*/
     font-family: Nunito, sans-serif;
-    color: #1c1c1c;
+    color: #1c1c1c;    
 }
 
 h1, h2, h3{
@@ -20,13 +20,20 @@ h1, h2, h3{
     border-radius: 3px;
 }
 
-/*Navegação*/
+/*Navegação , parte de cima */
 nav {
     display: flex;
     flex-direction: column;/*centro*/
     align-items: center;
     background-color: #ee6b81;
+
+    transition-property: background-color;
+    transition-duration: 2s;
 }
+nav:hover{
+    background-color: #da445d;
+}
+
 
 /*Logo no menu*/
 nav > a{
@@ -90,6 +97,13 @@ header p{
     padding: 10px 10px 20px 20px;
     background-color: #ee6b81;
     color: #FFFFFF;
+
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+#sobre:hover{
+    background-color: #da445d;
 }
 
 #sobre h2{
@@ -112,6 +126,15 @@ header p{
     flex-direction: column;/*centro*/
     align-items: center;
     padding: 30px;
+}
+
+#serviços .botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ee6b81;
+    font-size: .9em;
+    border-radius: 3px;
 }
 
 #serviços div{
@@ -145,7 +168,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: #00FFFF;
+    color: #B4F8C8;
 }
 
 /*deixar o site responsivo*/
@@ -184,6 +207,7 @@ footer a{
         max-width: 1000px;/*Largura maxima*/
         margin: 0 auto;/*auto ajusta automaticamente a distancia entre esquerda e direita*/
     }
+
     #serviços h2{
         text-align: center;
         width: 100%;
