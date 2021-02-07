@@ -1,17 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style2.css">
     <script src="other.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="img/diamond.ico">
 </head>
+
 <body>
+
+    <nav>
+        <a href="#">Teste Estágio</a>
+        <ul class="menu">
+            <!--ancora dos menus topo-->
+            <li><a href="#exercicios">Exercícios</a></li>
+            <li><a href="index.html">Retornar</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Informações</h1>
+        <p>Nessa guia é onde pode ser realizado os testes</p>
+    </header>
+
+
+
+    <section id="redireciona">
+        <h2>Vamos ao teste?</h2>
+        <p>Aqui você pode ir realizar os testes</p>
+        
+        <a href="#exercicios" class="botao"> Let's Go </a>
+    </section>
+
+    <section id="exercicios">
+        <h2>Escolha o Exercício</h2>
+        <nav class="choice">
+            <ul>
+                <li><a href="#ex">Lista Exercícios</a>
+                    <ul>
+                        <li><a href="#ex1"><label for="exercicio1"> Exercício 1 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio2"> Exercício 2 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio3"> Exercício 3 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio4"> Exercício 4 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio4"> Exercício 4 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio5"> Exercício 5 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio6"> Exercício 6 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio7"> Exercício 7 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio8"> Exercício 8 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio9"> Exercício 9 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio10"> Exercício 10 </label></a></li>
+                        <li><a href="#ex"><label for="exercicio11"> Exercício 11 </label></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
     
+    <div class="classe">
+        <div>
+        <input class = "text" type="radio" name="exe" id="exercicio1" checked="true">
+        <input class = "text" type="radio" name="exe" id="exercicio2">
+        <input class = "text" type="radio" name="exe" id="exercicio3">
+        <input class = "text" type="radio" name="exe" id="exercicio4">
+        <input class = "text" type="radio" name="exe" id="exercicio5">
+        <input class = "text" type="radio" name="exe" id="exercicio6">
+        <input class = "text" type="radio" name="exe" id="exercicio7">
+        <input class = "text" type="radio" name="exe" id="exercicio8">
+        <input class = "text" type="radio" name="exe" id="exercicio9">
+        <input class = "text" type="radio" name="exe" id="exercicio10">
+        <input class = "text" type="radio" name="exe" id="exercicio11">
+    </div>
+
+    <section class="seçao">
+        <h3>Crie uma função que receba duas strings e retorna o de maior comprimento.</h3>
+        <section class="funçoes" id="ex1">
+            <fieldset>
+            <div id="primeiro">
+                <label class="1" for="pri">Primeira frase:</label>
+                <br>
+                <input class="form" type="text" placeholder="insira " id="first" name="first" >
+            </div>
+
+            <div id="segundo">
+                <label class="2" for="seg">Segunda frase:</label><br>
+                <input class="form" type="text" placeholder="insira " id="second" name="second" >
+            </div>
+            <div id="botao1">
+                <button class="bot" type="button" name="botao1" onclick="exercicio1();">Enviar</button>
+            </div>            
+        </section>
+            <div id="retorna">
+                <a href="#exercicios" class="botao">VOLTAR</a>
+            </div>
+    </fieldset>
+    </div>
+
+    <!--
     <input type="text" id="valor">
     <input type="submit" onclick="exercicio1();" value="escreva algo">
     <p id="valorDigitado"></p>
-
+    -->
+    </section>
+    <footer>
+        <a href="#" class="botao">VOLTAR</a>
+        <p>Desenvolvido por Diego Koga :3</p>
+    </footer>
+    
 </body>
 </html>

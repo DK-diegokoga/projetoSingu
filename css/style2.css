@@ -1,0 +1,285 @@
+body, html {
+    /*Se der problema na font a sans-serif vai aparecer no lugar*/
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;    
+}
+/*
+.geral{
+    min-height: 100%;
+    position:relative;
+    width: 800px;
+}*/
+
+h1, h2, h3{
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+/*
+.botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ee6b81;
+    font-size: .9em;
+    border-radius: 3px;
+}*/
+
+/*Navegação , parte de cima */
+nav {
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    background-color: #ee6b81;
+
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+nav:hover{
+    background-color: #da445d;
+}
+
+/*Logo no menu*/
+nav > a{
+    text-decoration: none;/*tira a decoração do texto: sublinhado*/
+    color:#FFFFFF;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    list-style: none;
+    padding: 0;/*tira o espaçamento*/
+    width: 100%;/*largura, o menu vai ocupar 100% da largura da plataforma que estiver exibindo*/
+}
+
+/*estilos dos itens do texto*/
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0; /*o 0 tira o espaçamento da letra entre o bloco */
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    background-image: url("../img/pink.jpg");
+    background-size: cover;/*cobre todo o espaço*/
+    background-repeat: none;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #FFFFFF;
+}
+
+header p{
+    margin-bottom: 2em;/*margem dinamica a partir da posição que iniciar*/
+}
+
+
+#redireciona{
+    display: flex;
+    flex-direction: column;/*centro*/
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #ee6b81;
+    color: #FFFFFF;
+
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+#redireciona:hover{
+    background-color: #da445d;
+}
+
+#redireciona h2{
+    color: #FFFFFF;
+}
+
+#redireciona p{
+    margin-bottom: 2.5em;/*margem dinamica para separar as seções*/
+    max-width: 1000px;
+}
+
+#redireciona .botao{
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: .9em;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+
+/*Tentativa de dropdown*/
+.choice ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.choice ul li {
+    display: inline;
+    position: relative;
+}
+
+.choice ul li a{
+    background-color:#da445d;
+    text-decoration: none;
+    /*display: inline-block;*/
+    padding: 10px;
+}
+
+.choice ul li a:hover{
+    background-color: #df2745;
+}
+
+.choice ul ul{
+    
+    display: none;
+    /*left: 100%;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;*/
+    position: absolute ;   
+}
+
+.choice ul li:hover ul{
+    display: block;
+    /*visibility: visible; */   
+}
+
+.choice ul ul {
+    width: 150px;
+}
+
+.choice ul ul li a{
+    display: block;
+}
+
+.text{
+    display: none;
+}
+
+
+.funçoes {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h3{
+    text-decoration: none;   
+}
+h3{
+    align-items: center;
+}
+
+
+#retorna .botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color:deepskyblue ;
+    font-size: .9em;
+    border-radius: 3px;   
+}
+
+.funçoes primeiro{
+    position: absolute;
+}
+
+.primeiro{
+    color: black;
+    font-family: Nunito, sans-serif;
+    font-size: 100%;
+}
+
+.funçoes segundo{
+    position: absolute;
+}
+
+.segundo{
+    color: black;
+    font-family: Nunito, sans-serif;
+    font-size: 100%;
+}
+
+.botao1{
+    align-items: center;
+}
+
+#exercicio1:checked~.seçao{
+    margin-top: -100vh;
+}
+
+/*Rodapé*/
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #ee6b81;
+    color: #FFFFFF;
+}
+
+footer a{
+    text-decoration: none;
+    color: #B4F8C8;
+}
+
+/*footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}*/
+
+
+/*deixar o site responsivo*/
+@media screen and (min-width: 768px){
+    /*nav*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*Cabeçalho*/
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /*Redirecionando*/
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;/*altura minima*/
+    }
+
+}
