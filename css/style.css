@@ -135,6 +135,13 @@ header p{
     background-color: #ee6b81;
     font-size: .9em;
     border-radius: 3px;
+
+    transition-property: background-color;
+    transition-duration: -4s;
+}
+
+#serviços .botao:hover{
+    background-color: #da445d;
 }
 
 #serviços div{
@@ -146,7 +153,7 @@ header p{
 }
 
 /*Contato*/
-#contato{
+#contato{    
     display: flex;
     flex-direction: column;/*centro*/
     align-items: center;
@@ -156,6 +163,7 @@ header p{
 
 #contato h2{
     color: #000000;
+    text-decoration: none;
 }
 
 /*Rodapé*/

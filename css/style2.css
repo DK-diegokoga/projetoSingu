@@ -1,4 +1,4 @@
-body, html {
+body {
     /*Se der problema na font a sans-serif vai aparecer no lugar*/
     font-family: Nunito, sans-serif;
     color: #1c1c1c;    
@@ -189,12 +189,8 @@ header p{
     display: flex;
 }
 
-h3{
-    text-decoration: none;   
-}
-h3{
-    align-items: center;
-}
+
+
 
 
 #retorna .botao{
@@ -226,13 +222,34 @@ h3{
     font-size: 100%;
 }
 
-.botao1{
-    align-items: center;
+fieldset{
+    background: #ee6b81;
 }
 
-#exercicio1:checked~.seçao{
-    margin-top: -100vh;
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background: #ee6b81;
 }
+
+button:hover{
+    background-color: #df2745;
+}
+
+.botaum{
+    display: inline-block;
+    
+}
+
+#funçoes quinto{
+    position: absolute;
+}
+
+hr{
+    width: 100%;
+    border-bottom: 1px solid #000000 ;
+}
+
 
 /*Rodapé*/
 footer{
@@ -275,11 +292,13 @@ footer a{
     }
 
     /*Redirecionando*/
-    #sobre{
+    #redireciona{
         height: 250px;
         height: 30vh;
         justify-content: center;
         min-height: 250px;/*altura minima*/
     }
+
+    
 
 }
