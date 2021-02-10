@@ -49,8 +49,8 @@ nav ul{
     flex-direction: column;/*centro*/
     align-items: center;
     list-style: none;
-    padding: 0;/*tira o espaçamento*/
-    width: 100%;/*largura, o menu vai ocupar 100% da largura da plataforma que estiver exibindo*/
+    padding: 0;
+    width: 100%;
 }
 
 /*estilos dos itens do texto*/
