@@ -1,7 +1,7 @@
 # projetoSingu
 
 ## Instruções para utilização do site:
-
+https://dk-diegokoga.github.io/projetoSingu/
 
 - Para realizar os testes, abra o arquivo "index.html" no navegador 
 
